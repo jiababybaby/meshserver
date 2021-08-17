@@ -294,8 +294,10 @@ struct lws_context_creation_info info;
 		return 1;
 	}
 
-	while (n >= 0 && !interrupted)
+	while (n >= 0 && !interrupted){
+		printf("service %d\n",n);
 		n = lws_service(context, 0);
+	}
 
 	lws_context_destroy(context);
 
