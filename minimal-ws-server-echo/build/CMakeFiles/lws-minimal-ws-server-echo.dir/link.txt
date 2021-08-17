@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/lws-minimal-ws-server-echo.dir/minimal-ws-server-echo.c.o  -o lws-minimal-ws-server-echo -rdynamic /usr/local/lib/libwebsockets.a -lpthread -lm -ldl -lssl -lcrypto -lssl -lcrypto -lpthread 
