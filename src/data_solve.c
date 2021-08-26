@@ -2,8 +2,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <errno.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/mman.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <sys/msg.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 #include "../include/json_check.h"
 #include "../include/mesh_sql.h"
+#include "../include/data_solve.h"
 /* Used by some code below as an example datatype. */
 /* Create a bunch of objects as demonstration. */
 static int print_preallocated(cJSON *root)
@@ -128,7 +141,12 @@ int replace_character(char *instr, char* outstr)
     return 0;
 }
 
-int Data_TCP_Data_Parse_Json(char *tcp_data){
+int Data_TCP_Data_Parse_Json(char *tcp_data, sn2fd *shm2_addr, int *num, int fd)
+{
+    if(tcp_data == NULL || shm2_addr == NULL)
+    {
+        return -1;
+    }
     char *json_src_string = NULL;
     char *json_chk_string = NULL;
 
@@ -178,10 +196,76 @@ int Data_TCP_Data_Parse_Json(char *tcp_data){
     printf("sn: %s, mac :%s, kind: %s, id: %s, data: %s, status: %s\r\n",device_info.sn,device_info.device_mac,
     device_info.device_kind,device_info.device_id,device_info.device_data,device_info.device_status);
     mesh_sql_v.add_device_data(device_info);
-    cJSON_Delete(root);
+    if(*num == -1){
+        int i = 0;
+        while (strlen(shm2_addr[i].sn) != 0)
+        {
+            if(strcmp(shm2_addr[i].sn, sn) == 0)
+            {
+                break;
+            }
+            i++;
+        }
+        *num = i;
+        strcpy(shm2_addr[i].sn, sn);
+        shm2_addr->fd = fd;
+        cJSON_Delete(root);
+        for (i = 0; i < 10;i++)
+        {
+            printf("i: %d, sn: %s\n", i, &shm2_addr[i]);
+        }
+    }
     return 0;
 }
-
+int open_shm2(sn2fd **shm2_addr)
+{
+    int shm2fd = shm_open(shm2_name, O_CREAT | O_RDWR, 0666);
+    if(shm2fd == -1){
+        printf("shm_open error(%d)\n",errno);
+        exit(1);
+    }
+    if (ftruncate(shm2fd, shm2_size) == -1){
+        printf("ftruncate error(%d)\n",errno);
+        exit(1);
+    }
+    struct stat buf2;
+    if(fstat(shm2fd,&buf2) == -1){
+        printf("fstat error(%d)\n",errno);
+        exit(1);
+    }
+    printf("shm2 size:(%ld)\n", buf2.st_size);
+    *shm2_addr= mmap(NULL, shm2_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm2fd, 0);
+}
+int send_to_device(char *sn, char *reply)
+{
+    if(sn == NULL || reply == NULL)
+    {
+        return -1;
+    }
+    sn2fd *shm2_addr = NULL;
+    open_shm2(&shm2_addr);
+    printf("shm2_addr%x\n", shm2_addr);
+    printf("sn: %s\n", sn);
+    for (int i = 0; i < 10; i++)
+    {
+        if(strcmp(sn, shm2_addr[i].sn) == 0){
+            printf("i: %d, sn: %s\n",i, shm2_addr[i].sn);
+            mymesg ckxmsg;
+            memset(&ckxmsg, 0, sizeof(mymesg));
+            ckxmsg.mtype = i+1;
+            strcpy(ckxmsg.mtext, reply);
+            int msg_id = msgget(0x01, IPC_CREAT | 0666);
+            if(msg_id == -1)
+            {
+                printf("create msg error \n");
+                return 0;
+            }
+            msgsnd(msg_id, &ckxmsg, sizeof(long)+strlen(ckxmsg.mtext), 0);
+            //send(shm2_addr[i].fd, reply, strlen(reply), 0);
+            break;
+        }
+    }
+}
 int ws_data_Parse_Json(char *ws_data, char *reply_data)
 {
     char *json_src_string = NULL;
@@ -334,13 +418,13 @@ int ws_data_Parse_Json(char *ws_data, char *reply_data)
         cJSON *Device = cJSON_GetObjectItem(root, "device"); //device
         if(!cJSON_IsInvalid(Device))
         {
-            device_sn=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_sn"));
+            device_sn=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "sn"));
             device_mac=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_mac"));
             device_kind=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_kind"));
             device_id=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_id"));
             cJSON* device_data=cJSON_GetObjectItem(Device, "device_data");
-            data_method=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "deta_method"));
-            data_num=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "deta_num"));
+            data_method=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "data_method"));
+            data_num=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "data_num"));
         }
         user_gw gw_info;
         gw_info.opid=opid;
@@ -393,31 +477,31 @@ int ws_data_Parse_Json(char *ws_data, char *reply_data)
         char* floor=cJSON_GetStringValue(cJSON_GetObjectItem(SN,"floor"));
 
         cJSON* Device = cJSON_GetObjectItem(root, "device");   //device
-        char* device_sn=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_sn"));
+        char* device_sn=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "sn"));
         char* device_mac=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_mac"));
         char* device_kind=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_kind"));
         char* device_id=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_id"));
         cJSON* device_data=cJSON_GetObjectItem(Device, "device_data");
-        char* data_method=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "deta_method"));
-        char* data_num=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "deta_num"));
+        char* data_method=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "data_method"));
+        char* data_num=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "data_num"));
 
 
-        cJSON* ans;
+        cJSON* ans, *ans_data;
         device device_info;
         device_info.device_mac=device_mac;
         device_info.sn=device_sn;
         device_info.device_id=device_id;
         device_info.device_kind=device_kind;
         ans = cJSON_CreateObject();
+        ans_data = cJSON_CreateObject();
 
-        
         cJSON_AddStringToObject(ans, "device_mac", device_info.device_mac);
-        cJSON_AddStringToObject(ans, "device_kind", device_info.device_kind);
+        //cJSON_AddStringToObject(ans, "device_kind", device_info.device_kind);
         cJSON_AddStringToObject(ans, "device_id", device_info.device_id);
-        cJSON_AddStringToObject(ans, "device_data", device_info.device_data);
-        cJSON_AddStringToObject(ans, "device_status", device_info.device_status);
         cJSON_AddStringToObject(ans, "sn", device_info.sn);
-
+        cJSON_AddStringToObject(ans_data, "data_method", data_method);
+        cJSON_AddStringToObject(ans_data, "data_num", data_num);
+        cJSON_AddItemToObject(ans, "device_data", ans_data);
         char *ans_str = cJSON_Print(ans);
         memset(reply_data, 0, sizeof(reply_data));
         strcpy(reply_data, ans_str);
@@ -427,6 +511,7 @@ int ws_data_Parse_Json(char *ws_data, char *reply_data)
         cJSON_Delete(ans);  
         //TODO: 发送给设备
         printf("send to device %s",reply_data);
+        send_to_device(device_sn, reply_data);
         // emit send_to_gw(device_sn,json_str);
         //            device_info.sn_name=name;
         //            device_info.sn_position=position;
@@ -442,13 +527,13 @@ int ws_data_Parse_Json(char *ws_data, char *reply_data)
         char* floor=cJSON_GetStringValue(cJSON_GetObjectItem(SN,"floor"));
 
         cJSON* Device = cJSON_GetObjectItem(root, "device");   //device
-        char* device_sn=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_sn"));
+        char* device_sn=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "sn"));
         char* device_mac=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_mac"));
         char* device_kind=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_kind"));
         char* device_id=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_id"));
         cJSON* device_data=cJSON_GetObjectItem(Device, "device_data");
-        char* data_method=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "deta_method"));
-        char* data_num=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "deta_num"));
+        char* data_method=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "data_method"));
+        char* data_num=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "data_num"));
 
 
         device device_info;
@@ -491,14 +576,14 @@ int ws_data_Parse_Json(char *ws_data, char *reply_data)
         char* floor=cJSON_GetStringValue(cJSON_GetObjectItem(SN,"floor"));
 
         cJSON* Device = cJSON_GetObjectItem(root, "device");   //device
-        char* device_sn=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_sn"));
+        char* device_sn=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "sn"));
         char* device_mac=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_mac"));
         char* device_kind=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_kind"));
         char* device_id=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_id"));
         char* device_name=cJSON_GetStringValue(cJSON_GetObjectItem(Device, "device_name"));
         cJSON* device_data=cJSON_GetObjectItem(Device, "device_data");
-        char* data_method=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "deta_method"));
-        char* data_num=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "deta_num"));
+        char* data_method=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "data_method"));
+        char* data_num=cJSON_GetStringValue(cJSON_GetObjectItem(device_data, "data_num"));
 
         device device_info;
         device_info.device_mac=device_mac;

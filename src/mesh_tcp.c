@@ -18,13 +18,18 @@
 #include <sys/mman.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
+#include <sys/msg.h>
 #include <sys/wait.h>
 #include <signal.h>
 #include <semaphore.h>
 #include "../include/data_solve.h"
-sem_t *sem_tcp_recv,*sem_shm_tcp;
+#include "../include/hash.h"
+sem_t *sem_tcp_recv, *sem_shm_tcp;
 const char *shm_name = "sh_mem1";
 const int shm_size = 1024;
+const char *shm2_name = "sh_mem2";
+const int shm2_size = 10240;
+int msg_id = -1;
 #define OPEN_MAX 100
 void Stop(int signo) {
     printf("oops! stop!!!\n");
@@ -33,12 +38,41 @@ void Stop(int signo) {
     sem_unlink("sem_tcp_recv");
     sem_unlink("sem_shm_tcp");
     shm_unlink(shm_name);
+    shm_unlink(shm2_name);
+    if(msgctl(msg_id,IPC_RMID,NULL) < 0)
+	{
+		printf("del msg error \n");
+	}
     _exit(0);
 
+}
+int tcp_fd = -1;
+int tcp_epoll_fd = -1;
+void TCP_handler(int signum)
+{
+    //信号的响应操作  
+    printf("recive signal %d\n", signum);  
+    //打印sigval的参数
+    if(tcp_fd > 0)
+    {
+        close(tcp_fd);
+    }
+    if(tcp_epoll_fd > 0)
+    {
+        close(tcp_epoll_fd);
+    }
+    exit(0);
 }
 int mesh_tcp_init(int tcp_port)
 {
     signal(SIGINT, Stop); 
+	mymesg ckxmsg;
+	msg_id = msgget(0x01,IPC_CREAT | 0666);
+	if(msg_id == -1)
+	{
+		printf("create msg error \n");
+		return 0;
+	}
     sem_tcp_recv = sem_open("sem_tcp_recv", O_CREAT, 0666, 0);
     sem_shm_tcp = sem_open("sem_shm_tcp", O_CREAT, 0666, 1);
     int shmfd = shm_open(shm_name, O_CREAT | O_RDWR, 0666);
@@ -56,8 +90,28 @@ int mesh_tcp_init(int tcp_port)
         exit(1);
     }
     printf("shm size:(%ld)\n",buf.st_size);
+    int shm2fd = shm_open(shm2_name, O_CREAT | O_RDWR, 0666);
+    if(shm2fd == -1){
+        printf("shm_open error(%d)\n",errno);
+        exit(1);
+    }
+    if (ftruncate(shm2fd, shm_size) == -1){
+        printf("ftruncate error(%d)\n",errno);
+        exit(1);
+    }
+    struct stat buf2;
+    if(fstat(shm2fd,&buf2) == -1){
+        printf("fstat error(%d)\n",errno);
+        exit(1);
+    }
+    printf("shm2 size:(%ld)\n",buf2.st_size);
+    //HashTable* ht = hash_table_new();
+
     char *shm_addr=NULL;
     shm_addr= mmap(NULL, shm_size, PROT_READ | PROT_WRITE, MAP_SHARED, shmfd, 0);
+    sn2fd *shm2_addr=NULL;
+    shm2_addr= mmap(NULL, shm2_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm2fd, 0);
+    
     struct epoll_event event;   // 告诉内核要监听什么事件  
     struct epoll_event wait_event; //内核监听完的结果
 	
@@ -70,7 +124,10 @@ int mesh_tcp_init(int tcp_port)
 	my_addr.sin_family = AF_INET;
 	my_addr.sin_port = htons(tcp_port);
 	my_addr.sin_addr.s_addr = htonl(INADDR_ANY);
-	bind(sockfd, (struct sockaddr *)&my_addr, sizeof(my_addr));
+	int socket_ret = bind(sockfd, (struct sockaddr *)&my_addr, sizeof(my_addr));
+    if(socket_ret < 0){
+        perror("socket bind error.\n");
+    }
     int rc;
     int val=1;
     rc = setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR,(const void *)&val, sizeof(val));
@@ -133,48 +190,65 @@ int mesh_tcp_init(int tcp_port)
                 event.events = EPOLLIN|EPOLLRDHUP; // 表示对应的文件描述符可以读
                 //6.1.3.事件注册函数，将监听套接字描述符 connfd 加入监听事件  
                 ret = epoll_ctl(epfd_t, EPOLL_CTL_ADD, connfd, &event);
+                tcp_epoll_fd = epfd_t;
+                tcp_fd = connfd;
+                int fd[2];
+                pipe(fd);//fd[0]是读，fd[1]是写
                 int write_pid = fork();
                 if(write_pid==0){
+                    signal(SIGINT, TCP_handler);
                     shm_addr= mmap(NULL, shm_size, PROT_READ | PROT_WRITE, MAP_SHARED, shmfd, 0);
                     char tcp_deal[1024] = {0};
+                    int fd_i = -1;
                     //todo write
-                    while(1){ 
-                        sem_wait(sem_tcp_recv); 
-                        sem_wait(sem_shm_tcp);
-                        memset(tcp_deal, 0, sizeof(tcp_deal));
-                        memcpy(tcp_deal,shm_addr,strlen(shm_addr));
-                        memset(shm_addr, 0, strlen(shm_addr));
-                        sem_post(sem_shm_tcp);
-                        printf("tcp deal process\n");
-                        Data_TCP_Data_Parse_Json(tcp_deal);
+                    close(fd[1]);
+                    read(fd[0],&fd_i,sizeof(int));
+                    printf("receive fd_i %d\n", fd_i);
+                    char buf[1024]={0};
+                    while (1)
+                    {
+                        memset(buf, 0, sizeof(buf));
+                        int ret = msgrcv(msg_id, buf, sizeof(buf), fd_i+1, 0);
+                        if(ret == -1){
+                            printf("msgrcv error.\n");
+                            exit(0);
+                        }
+                        printf("msgrcv %d ret: %s\n",ret,buf+8);
+                        ret = write(connfd, buf+sizeof(long int), strlen(buf+sizeof(long int)));
+                        printf("send: %d\n",ret);
                     }
                 }else if(write_pid>0){
-                    while(1){
-                        printf("wattinf at %d\n", epfd_t);
+                    int fd_i = -1;
+                    close(fd[0]);
+                    while (1)
+                    {
+                        printf("watting at %d\n", epfd_t);
                         ret = epoll_wait(epfd_t, &wait_event, maxi+1, -1); 
-                        printf("wattinf at %d\n", write_pid);
+                        printf("watting at %d\n", write_pid);
+                        printf("epoll: %x\n",wait_event.events);
                         if(( connfd == wait_event.data.fd )   
                         && ( EPOLLIN == wait_event.events & (EPOLLIN|EPOLLERR) ))
                         {
                             int len = 0;
-                            char buf[128] = "";
+                            char buf[1024] = {0};
                             
                             //6.2.1接受客户端数据
                             if((len = recv(connfd, buf, sizeof(buf), 0)) < 0)
                             {
-                                if(errno == ECONNRESET)//tcp连接超时、RST
-                                {
-                                    close(connfd);
-                                    connfd = -1;
-                                }
-                                else
-                                    perror("read error:");
+                                printf("超时。\n");
+                                close(connfd);
+                                close(epfd_t);
+                                connfd = -1;
+                                kill(write_pid, SIGKILL);
+                                waitpid(write_pid,NULL,-1);
+                                exit(0);
                             }
                             else if(len == 0)//客户端关闭连接
                             {
                                 close(connfd);
+                                close(epfd_t);
                                 connfd = -1;
-                                printf("断开连接\n");
+                                printf("断开连接1\n");
                                 kill(write_pid, SIGKILL);
                                 waitpid(write_pid,NULL,-1);
                                 exit(0);
@@ -182,24 +256,41 @@ int mesh_tcp_init(int tcp_port)
                             else//正常接收到服务器的数据
                             {
                                 printf("recv %s\n", buf);
-                                sem_wait(sem_shm_tcp);
-                                memcpy(shm_addr,buf,len);
-                                sem_post(sem_shm_tcp);
-                                sem_post(sem_tcp_recv);
-                                send(connfd, buf, len, 0);
+                                // sem_wait(sem_shm_tcp);
+                                printf("tcp deal process\n");
+                                Data_TCP_Data_Parse_Json(buf, shm2_addr, &fd_i, connfd);
+                                write(fd[1], &fd_i, sizeof(int));
+                                printf("i: %d\n", fd_i);
+                                //send(connfd, buf, len, 0);
                                 printf("tcp read process.\r\n");
                             }
+                        }else if(( connfd == wait_event.data.fd )   
+                        && ( (EPOLLRDHUP) == (wait_event.events & EPOLLRDHUP) ))
+                        {
+                            printf("%x\n",wait_event.events);
+                            int i = 0;
+                            if(fd_i >= 0)
+                            {
+                                memset(&shm2_addr[fd_i], 0, strlen((shm2_addr[fd_i].sn)));
+                                for (i = 0; i < 10; i++)
+                                {
+                                    printf("i: %d, sn: %s\n", i, &shm2_addr[i]);
+                                }
+                            }
+                            close(connfd);
+                            close(epfd_t);
+                            connfd = -1;
+                            printf("断开连接...\n");
+                            kill(write_pid, SIGINT);
+                            waitpid(write_pid,NULL,-1);
+                            exit(0);
                         }else
                         {
-                                close(connfd);
-                                connfd = -1;
-                                printf("断开连接\n");
-                                kill(write_pid, SIGKILL);
-                                waitpid(write_pid,NULL,-1);
-                                exit(0);
+                            printf("wfd: %d,event: %x, fd: %d\n",wait_event.data.fd, wait_event.events, connfd);
                         }
                     }
-                }else{
+                }else
+                {
                     printf("fork error\n");
                 }
             }

@@ -8,7 +8,7 @@ mesh_sql mesh_sql_v = {
     .init = meshsql_init,
     .add_device_data = add_device_data,
     .mysql_adddev = mysql_adddev,
-   .mysql_get_device_id = mysql_get_device_id,
+    .mysql_get_device_id = mysql_get_device_id,
     .mysql_addsn = mysql_addsn,
     .mysql_delsn = mysql_delsn,
     .mysql_delall = mysql_delall,
@@ -40,6 +40,7 @@ static int meshsql_init(void)
         return -1;
     }
     printf("Connected MySQL successful! \n");
+    
     query_str = "select * from user_gw_table";
     rc = mysql_real_query(&mysql, query_str, strlen(query_str));
     if (0 != rc) {
@@ -344,7 +345,10 @@ static int mysql_getdevice(user_gw gw_info, char *device_mac, device_get_from_sq
                             add_quo(device_get_from_sql_v->device_v[device_get_from_sql_v->num].device_status, 1, row[j]);
                             continue;
                         }
-                        
+                        if(!strcmp(column[j],"device_data")){
+                            add_quo(device_get_from_sql_v->device_v[device_get_from_sql_v->num].device_data, 1, row[j]);
+                            continue;
+                        }                        
                     }
                     device_get_from_sql_v->num++;
                     printf("\n");
@@ -428,7 +432,10 @@ static int mysql_getdevice(user_gw gw_info, char *device_mac, device_get_from_sq
                     add_quo(device_get_from_sql_v->device_v[device_get_from_sql_v->num].device_status, 1, row[i]);
                     continue;
                 }
-                
+                if(!strcmp(column[i],"device_data")){
+                    add_quo(device_get_from_sql_v->device_v[device_get_from_sql_v->num].device_data, 1, row[i]);
+                    continue;
+                }                
             }
             device_get_from_sql_v->num++;
             printf("\n");

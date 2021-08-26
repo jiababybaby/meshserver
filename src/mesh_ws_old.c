@@ -43,6 +43,7 @@ __minimal_destroy_message(void *_msg)
 	msg->len = 0;
 }
 #include <assert.h>
+pid_t pid = -1;
 static int callback_minimal_server_echo(struct lws *wsi, enum lws_callback_reasons reason,
 										void *user, void *in, size_t len)
 {
@@ -79,6 +80,9 @@ static int callback_minimal_server_echo(struct lws *wsi, enum lws_callback_reaso
 		break;
 
 	case LWS_CALLBACK_ESTABLISHED:
+		// if(pid != 0){
+			// pid = fork();
+			// if(pid == 0){
 				/* generate a block of output before travis times us out */
 				lwsl_warn("LWS_CALLBACK_ESTABLISHED\n");
 				pss->ring = lws_ring_create(sizeof(struct msg), RING_DEPTH,
@@ -86,9 +90,12 @@ static int callback_minimal_server_echo(struct lws *wsi, enum lws_callback_reaso
 				if (!pss->ring)
 					return 1;
 				pss->tail = 0;
-
+				
+			// }
+		// }
 		break;
 	case LWS_CALLBACK_SERVER_WRITEABLE:
+		// if(pid == 0){
 			lwsl_user("LWS_CALLBACK_SERVER_WRITEABLE\n");
 
 			if (pss->write_consume_pending) {
@@ -134,9 +141,12 @@ static int callback_minimal_server_echo(struct lws *wsi, enum lws_callback_reaso
 
 			if ((*vhd->options & 1) && pmsg && pmsg->final)
 				pss->completed = 1;
+		// }
 		break;
 		
 	case LWS_CALLBACK_RECEIVE:
+		//printf("%s\r\n",in);
+		// if(pid == 0){
 			lwsl_user("LWS_CALLBACK_RECEIVE: %4d (rpp %5d, first %d, "
 					"last %d, bin %d, msglen %d (+ %d = %d))\n",
 					(int)len, (int)lws_remaining_packet_payload(wsi),
@@ -185,8 +195,10 @@ static int callback_minimal_server_echo(struct lws *wsi, enum lws_callback_reaso
 				pss->flow_controlled = 1;
 				lws_rx_flow_control(wsi, 0);
 			}
+		// }
 		break;
 	case LWS_CALLBACK_CLOSED:
+		if(pid == 0){
 			lwsl_user("LWS_CALLBACK_CLOSED\n");
 			lws_ring_destroy(pss->ring);
 
@@ -195,6 +207,8 @@ static int callback_minimal_server_echo(struct lws *wsi, enum lws_callback_reaso
 					*vhd->interrupted = 1 + pss->completed;
 				lws_cancel_service(lws_get_context(wsi));
 			}
+			exit(0);
+		}
 		break;
 
 	default:

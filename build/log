@@ -1,0 +1,28 @@
+nohup: ignoring input
+[2021/08/25 12:27:28:8074] N: lws_create_context: LWS: 4.2.99-v4.2.0-133-gbc01368, NET CLI SRV H1 H2 WS ConMon IPv6-absent
+[2021/08/25 12:27:28:8076] N:  ++ [wsi|0|pipe] (1)
+[2021/08/25 12:27:28:8076] N:  ++ [vh|0|netlink] (1)
+[2021/08/25 12:27:28:8091] N:  ++ [vh|1|default||10087] (2)
+[2021/08/25 12:27:28:8091] N:  Vhost 'default' using TLS mode
+[2021/08/25 12:27:28:8099] N:  SSL ECDH curve 'prime256v1'
+[2021/08/25 12:27:28:8150] N: [null wsi]: lws_socket_bind: source ads 0.0.0.0
+[2021/08/25 12:27:28:8150] N:  ++ [wsi|1|listen|default||10087] (2)
+JSON_checker_char: syntax error
+[2021/08/25 12:27:41:2274] N:  ++ [wsisrv|0|adopted] (1)
+[2021/08/25 12:27:41:3771] W: LWS_CALLBACK_ESTABLISHED
+[2021/08/25 12:27:59:4321] N:  -- [wsisrv|0|adopted] (0) 18.204s
+[2021/08/25 12:35:15:3829] N:  ++ [wsisrv|1|adopted] (1)
+[2021/08/25 12:35:15:5079] W: LWS_CALLBACK_ESTABLISHED
+[2021/08/25 12:35:20:9024] N:  -- [wsisrv|1|adopted] (0) 5.519s
+[2021/08/25 13:01:02:1033] N:  ++ [wsisrv|2|adopted] (1)
+[2021/08/25 13:01:02:2240] W: LWS_CALLBACK_ESTABLISHED
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_end: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
