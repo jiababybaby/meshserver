@@ -151,12 +151,27 @@ static int sn_get_data_init(sn_get_from_sql *sn_get_from_sql_v, int num_i){
     }
 }
 int sn_get_data_deinit(sn_get_from_sql *sn_get_from_sql_v, int num_i){
+    if(sn_get_from_sql_v ==NULL)
+        return -1;
+   if(sn_get_from_sql_v->user_gw_v[num_i].opid == NULL
+    ||sn_get_from_sql_v->user_gw_v[num_i].sn == NULL||
+    sn_get_from_sql_v->user_gw_v[num_i].sn_floor == NULL||
+    sn_get_from_sql_v->user_gw_v[num_i].sn_name == NULL ||
+    sn_get_from_sql_v->user_gw_v[num_i].sn_position == NULL||
+    sn_get_from_sql_v->user_gw_v[num_i].sn_status == NULL
+    ){
+        printf("free sn null\n");
+        return -1;
+   }
     char **p = NULL;
     int size = sizeof(sn_get_from_sql_v->user_gw_v[num_i]) / sizeof(sn_get_from_sql_v->user_gw_v[num_i].opid);
-    for (int i = 0; i < size; i++){
+    printf("sn size: %d\n",size);
+    for (int i = 0; i < size; i++)
+    {
         p= (void *)(&( sn_get_from_sql_v->user_gw_v[num_i].opid) + i); 
-        if(*p != NULL){
+        if(p != NULL && *p != NULL){
             free(*p);
+            *p = NULL;
         }
     }
 }

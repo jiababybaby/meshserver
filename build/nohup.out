@@ -1,0 +1,4224 @@
+[2021/08/30 09:47:49:5160] N: lws_create_context: LWS: 4.2.99-v4.2.0-133-gbc01368, NET CLI SRV H1 H2 WS ConMon IPv6-absent
+[2021/08/30 09:47:49:5170] N:  ++ [wsi|0|pipe] (1)
+[2021/08/30 09:47:49:5170] N:  ++ [vh|0|netlink] (1)
+[2021/08/30 09:47:49:5186] N:  ++ [vh|1|default||10087] (2)
+[2021/08/30 09:47:49:5186] N:  Vhost 'default' using TLS mode
+[2021/08/30 09:47:49:5194] N:  SSL ECDH curve 'prime256v1'
+[2021/08/30 09:47:49:5244] N: [null wsi]: lws_socket_bind: source ads 0.0.0.0
+[2021/08/30 09:47:49:5244] N:  ++ [wsi|1|listen|default||10087] (2)
+[2021/08/30 09:47:56:2050] N:  ++ [wsisrv|0|adopted] (1)
+[2021/08/30 09:47:56:2661] W: LWS_CALLBACK_ESTABLISHED
+**************************
+**************************
+**************************
+****mesh_server run...****
+**************************
+**************************
+**************************
+tcp_port: 10086
+ ws_port: 10087
+Connected MySQL successful! 
+The total rows is: 17
+The total fields is: 6
+1	(null)	(null)	(null)	(null)	2021-04-11 21:51:37	
+o27XH5EjSiroB_8T8H7rGV3De4iA	7c:9e:bd:d3:3e:68	????	????	false	2021-04-11 23:27:26	
+2021	202108			0	2021-08-15 09:35:31	
+2021	202108			0	2021-08-15 10:02:39	
+2022	202109			0	2021-08-15 10:03:11	
+2021	202108			0	2021-08-15 10:05:01	
+2021	202108			0	2021-08-15 10:07:29	
+2021	202108	hangzhou	2503	false	2021-08-15 16:23:23	
+2021	202108	hangzhou	2503	false	2021-08-15 16:25:37	
+2021	202108	hangzhou	2503	false	2021-08-15 16:26:54	
+2021	202108	hangzhou	2503	false	2021-08-15 16:28:30	
+2021	202108	hangzhou	2503	false	2021-08-15 16:30:54	
+2021	202108	hangzhou	2503	false	2021-08-15 16:31:43	
+2021	202108	hangzhou	2503	false	2021-08-15 16:32:15	
+2021	202108	hangzhou	2503	false	2021-08-15 16:36:10	
+2021	202108	hangzhou	2503	false	2021-08-15 16:36:16	
+2021	202108	hangzhou	2503	false	2021-08-15 16:36:59	
+ws process create success.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}[2021/08/30 09:57:37:2760] N:  ++ [wsisrv|1|adopted] (2)
+[2021/08/30 09:57:37:2779] N:  ++ [wsisrv|2|adopted] (3)
+[2021/08/30 09:57:37:3761] W: LWS_CALLBACK_ESTABLISHED
+[2021/08/30 09:57:37:3768] W: LWS_CALLBACK_ESTABLISHED
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+
+sn_get_num: 0
+get sn failed.
+ready to check ping0
+ws check error. ping0
+ready to check ping1
+ws check error. ping1
+ready to check ping2
+ws check error. ping2
+ready to check ping3
+ws check error. ping3
+ready to check ping4
+ws check error. ping4
+ready to check ping5
+ws check error. ping5
+ready to check ping6
+ws check error. ping6
+ready to check ping7
+ws check error. ping7
+ready to check ping8
+ws check error. ping8
+ready to check ping9
+ws check error. ping9
+ready to check ping10
+ws check error. ping10
+ready to check ping11
+ws check error. ping11
+ready to check ping12
+ws check error. ping12
+ready to check ping13
+ws check error. ping13
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check ping14
+ws check error. ping14
+ready to check ping15
+ws check error. ping15
+ready to check ping16
+ws check error. ping16
+ready to check ping17
+ws check error. ping17
+ready to check ping18
+ws check error. ping18
+ready to check ping19
+ws check error. ping19
+ready to check {"method":"get_sn","opid":"o27XH5EjSiroB_8T8H7rGV3De4iA"}
+sn_get_num: 0
+select * from (select * from user_gw_table order by time desc LIMIT 10000 )as a      where opid ='o27XH5EjSiroB_8T8H7rGV3De4iA' group by sn
+The total rows is: 1
+The total fields is: 6
+opid	sn	sn_position	sn_name	sn_status	time	
+6
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+o27XH5EjSiroB_8T8H7rGV3De4iA
+7c:9e:bd:d3:3e:68
+盘金华府
+我的房间
+false
+2021-04-11 23:27:26
+
+1205260
+sn size: 6
+ws data parse ok.
+ready to check ping20
+ws check error. ping20
+ready to check ping21
+ws check error. ping21
+ready to check ping22
+ws check error. ping22
+ready to check ping23
+ws check error. ping23
+ready to check ping24
+ws check error. ping24
+ready to check ping25
+ws check error. ping25
+ready to check ping26
+ws check error. ping26
+ready to check ping27
+ws check error. ping27
+ready to check ping28
+ws check error. ping28
+ready to check ping29
+ws check error. ping29
+ready to check ping30
+ws check error. ping30
+ready to check ping31
+ws check error. ping31
+ready to check ping32
+ws check error. ping32
+ready to check ping33
+ws check error. ping33
+ready to check ping34
+ws check error. ping34
+ready to check ping35
+ws check error. ping35
+ready to check ping36
+ws check error. ping36
+ready to check ping37
+ws check error. ping37
+ready to check ping38
+ws check error. ping38
+ready to check ping39
+ws check error. ping39
+ready to check ping40
+ws check error. ping40
+ready to check ping41
+ws check error. ping41
+ready to check ping42
+ws check error. ping42
+ready to check ping43
+ws check error. ping43
+ready to check ping44
+ws check error. ping44
+ready to check ping45
+ws check error. ping45
+ready to check ping46
+ws check error. ping46
+ready to check ping47
+ws check error. ping47
+ready to check ping48
+ws check error. ping48
+ready to check {"method":"get_device","opid":"o27XH5EjSiroB_8T8H7rGV3De4iA","SN":{"sn":"1234"}}
+ready get device
+mac (null)
+mac 0
+select * from (select * from user_gw_table order by time desc LIMIT 10000 )as a      where opid ='o27XH5EjSiroB_8T8H7rGV3De4iA' group by sn
+The total rows is: 1
+The total fields is: 6
+opid	sn	sn_position	sn_name	sn_status	time	
+6
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+o27XH5EjSiroB_8T8H7rGV3De4iA
+7c:9e:bd:d3:3e:68
+盘金华府
+我的房间
+false
+2021-04-11 23:27:26
+
+sn: 1205a00
+select * from (select * from (                                       select * from mesh.device_table order by time desc limit 100000                                   ) as t                                   group by t.device_mac) as d where sn = '7c:9e:bd:d3:3e:68'
+The total rows is: 4
+The total fields is: 8
+7
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+7c:9e:bd:d3:3e:68	fc:f5:c4:19:cf:40	4	6	39	(null)	(null)	2021-04-12 05:56:29	
+7
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+7c:9e:bd:d3:3e:68	fc:f5:c4:19:b9:70	502			(null)	(null)	2021-06-02 00:11:53	
+7
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+7c:9e:bd:d3:3e:68	'	'	'	'	(null)	(null)	2021-08-30 08:58:13	
+7
+malloc ok
+malloc ok
+mallocJSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+[2021/08/30 09:57:50:0844] N:  -- [wsisrv|1|adopted] (2) 12.808s
+[2021/08/30 09:57:50:0852] N:  -- [wsisrv|2|adopted] (1) 12.807s
+ ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+7c:9e:bd:d3:3e:68	b4:e6:2d:99:79:f1	501			(null)	(null)	2021-08-26 22:04:25	
+get device ok
+sn size: 6
+sn deint ok
+get device success.
+ws data parse ok.
+ready to check ping49
+ws check error. ping49
+ready to check ping50
+ws check error. ping50
+ready to check ping51
+ws check error. ping51
+ready to check ping52
+ws check error. ping52
+ready to check ping53
+ws check error. ping53
+ready to check ping54
+ws check error. ping54
+ready to check ping55
+ws check error. ping55
+ready to check ping56
+ws check error. ping56
+ready to check ping57
+ws check error. ping57
+ready to check ping58
+ws check error. ping58
+ready to check ping59
+ws check error. ping59
+ready to check ping60
+ws check error. ping60
+ready to check ping61
+ws check error. ping61
+ready to check ping62
+ws check error. ping62
+ready to check ping63
+ws check error. ping63
+ready to check ping64
+ws check error. ping64
+ready to check ping65
+ws check error. ping65
+ready to check ping66
+ws check error. ping66
+ready to check ping67
+ws check error. ping67
+ready to check ping68
+ws check error. ping68
+ready to check ping69
+ws check error. ping69
+ready to check ping70
+ws check error. ping70
+ready to check {"method":"get_sn","opid":"o27XH5EjSiroB_8T8H7rGV3De4iA"}
+sn_get_num: 0
+select * from (select * from user_gw_table order by time desc LIMIT 10000 )as a      where opid ='o27XH5EjSiroB_8T8H7rGV3De4iA' group by sn
+The total rows is: 1
+The total fields is: 6
+opid	sn	sn_position	sn_name	sn_status	time	
+6
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+o27XH5EjSiroB_8T8H7rGV3De4iA
+7c:9e:bd:d3:3e:68
+盘金华府
+我的房间
+false
+2021-04-11 23:27:26
+
+1205a00
+sn size: 6
+ws data parse ok.
+ready to check ping71
+ws check error. ping71
+ready to check ping72
+ws check error. ping72
+ready to check ping73
+ws check error. ping73
+ready to check ping74
+ws check error. ping74
+ready to check ping75
+ws check error. ping75
+ready to check ping76
+ws check error. ping76
+ready to check ping77
+ws check error. ping77
+ready to check ping78
+ws check error. ping78
+ready to check ping79
+ws check error. ping79
+ready to check ping80
+ws check error. ping80
+ready to check ping81
+ws check error. ping81
+ready to check ping82
+ws check error. ping82
+ready to check ping83
+ws check error. ping83
+ready to check ping84
+ws check error. ping84
+ready to check ping85
+ws check error. ping85
+ready to check ping86
+ws check error. ping86
+ready to check ping87
+ws check error. ping87
+ready to check ping88
+ws check error. ping88
+ready to check ping89
+ws check error. ping89
+ready to check ping90
+ws check error. ping90
+ready to check ping91
+ws check error. ping91
+ready to check ping92
+ws check error. ping92
+ready to check ping93
+ws check error. ping93
+ready to check ping94
+ws check error. ping94
+ready to check ping95
+ws check error. ping95
+ready to check ping96
+ws check error. ping96
+ready to check ping97
+ws check error. ping97
+ready to check ping98
+ws check error. ping98
+ready to check ping99
+ws check error. ping99
+ready to check ping100
+ws check error. ping100
+ready to check ping101
+ws check error. ping101
+ready to check ping102
+ws check error. ping102
+ready to check ping103
+ws check error. ping103
+ready to check ping104
+ws check error. ping104
+ready to check ping105
+ws check error. ping105
+ready to check ping106
+ws check error. ping106
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn fa[2021/08/30 10:36:20:3253] N:  ++ [wsisrv|3|adopted] (2)
+[2021/08/30 10:36:20:4023] W: LWS_CALLBACK_ESTABLISHED
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+iled.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check ping0
+ws check error. ping0
+ready to check ping1
+ws check error. ping1
+ready to check ping2
+ws check error. ping2
+ready to check ping3
+ws check error. ping3
+ready to check ping4
+ws check error. ping4
+ready to check ping5
+ws check error. ping5
+ready to check ping6
+ws check error. ping6
+ready to check ping7
+ws check error. ping7
+ready to check ping8
+ws check error. ping8
+ready to check ping9
+ws check error. ping9
+ready to check ping10
+ws check error. ping10
+ready to check ping11
+ws check error. ping11
+ready to check ping12
+ws check error. ping12
+ready to check ping13
+ws check error. ping13
+ready to check ping14
+ws check error. ping14
+ready to check ping15
+ws check error. ping1JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+5
+ready to check ping16
+ws check error. ping16
+ready to check ping17
+ws check error. ping17
+ready to check ping18
+ws check error. ping18
+ready to check ping19
+ws check error. ping19
+ready to check ping20
+ws check error. ping20
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check ping21
+ws check error. ping21
+ready to check ping22
+ws check error. ping22
+ready to check ping23
+ws check error. ping23
+ready to check ping24
+ws check error. ping24
+ready to check ping25
+ws check error. ping25
+ready to check ping26
+ws check error. ping26
+ready to check ping27
+ws check error. ping27
+ready to check ping28
+ws check error. ping28
+ready to check ping29
+ws check error. ping29
+ready to check ping30
+ws check error. ping30
+ready to check ping31
+ws check error. ping31
+ready to check ping32
+ws check error. ping32
+ready to check ping33
+ws check error. ping33
+ready to check ping34
+ws check error. ping34
+ready to check ping35
+ws check error. ping35
+ready to check ping36
+ws check error. ping36
+ready to check ping37
+ws check error. ping37
+ready to check ping38
+ws check error. ping38
+ready to check ping39
+ws check error. ping39
+ready to check ping40
+ws check error. ping40
+ready to check ping41
+ws check error. ping41
+ready to check {"method":"get_sn","opid":"o27XH5EjSiroB_8T8H7rGV3De4iA"}
+sn_get_num: 0
+select * from (select * from user_gw_table order by time desc LIMIT 10000 )as a      where opid ='o27XH5EjSiroB_8T8H7rGV3De4iA' group by sn
+The total rows is: 1
+The total fields is: 6
+opid	sn	sn_position	sn_name	sn_status	time	
+6
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+o27XH5EjSiroB_8T8H7rGV3De4iA
+7c:9e:bd:d3:3e:68
+盘金华府
+我的房间
+false
+2021-04-11 23:27:26
+
+1211630
+sn size: 6
+ws data parse ok.
+ready to check ping42
+ws check error. ping42
+ready to check {"method":"get_device","opid":"o27XH5EjSiroB_8T8H7rGV3De4iA","SN":{"sn":"1234"}}
+ready get device
+mac (null)
+mac 0
+select * from (select * from user_gw_table order by time desc LIMIT 10000 )as a      where opid ='o27XH5EjSiroB_8T8H7rGV3De4iA' group by sn
+The total rows is: 1
+The total fields is: 6
+opid	sn	sn_position	sn_name	sn_status	time	
+6
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+o27XH5EjSiroB_8T8H7rGV3De4iA
+7c:9e:bd:d3:3e:68
+盘金华府
+我的房间
+false
+2021-04-11 23:27:26
+
+sn: 1211630
+select * from (select * from (                                       select * from mesh.device_table order by time desc limit 100000                                   ) as t                                   group by t.device_mac) as d where sn = '7c:9e:bd:d3:3e:68'
+The total rows is: 4
+The total fields is: 8
+7
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+7c:9e:bd:d3:3e:68	fc:f5:c4:19:cf:40	4	6	39	(null)	(null)	2021-04-12 05:56:29	
+7
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+7c:9e:bd:d3:3e:68	fc:f5:c4:19:b9:70	502			(null)	(null)	2021-06-02 00:11:53	
+7
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+7c:9e:bd:d3:3e:68	'	'	'	'	(null)	(null)	2021-08-30 08:58:13	
+7
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+7c:9e:bd:d3:3e:68	b4:e6:2d:99:79:f1	501			(null)	(null)	2021-08-26 22:04:25	
+get device ok
+sn size: 6
+sn deint ok
+get device success.
+ws data parse ok.
+ready to check ping43
+ws check error. ping43
+ready to check ping44
+ws check error. ping44
+ready to check ping45
+ws check error. ping45
+ready to check ping46
+ws check error. ping46
+ready to check ping47
+ws check error. ping47
+ready to check ping48
+ws check error. ping48
+ready to check ping49
+ws check error. ping49
+ready to check ping50
+ws check error. ping50
+ready to check ping51
+ws check error. ping51
+ready to check ping52
+ws check error. ping52
+ready to check ping53
+ws check error. ping53
+ready to check ping54
+ws check error. ping54
+ready to check ping55
+ws check error. ping55
+ready to check ping56
+ws check error. ping56
+ready to check ping57
+ws check error. ping57
+ready to check ping58
+ws check error. ping58
+ready to check ping59
+ws check error. ping59
+ready to check ping60
+ws check error.JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+[2021/08/30 10:36:30:6383] N:  -- [wsisrv|3|adopted] (1) 10.312s
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+[2021/08/30 10:37:24:9578] N:  ++ [wsisrv|4|adopted] (2)
+JSON_checker_char: syntax error
+[2021/08/30 10:37:25:0458] W: LWS_CALLBACK_ESTABLISHED
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+ ping60
+ready to check ping61
+ws check error. ping61
+ready to check ping62
+ws check error. ping62
+ready to check ping63
+ws check error. ping63
+ready to check ping64
+ws check error. ping64
+ready to check {"method":"get_sn","opid":"o27XH5EjSiroB_8T8H7rGV3De4iA"}
+sn_get_num: 0
+select * from (select * from user_gw_table order by time desc LIMIT 10000 )as a      where opid ='o27XH5EjSiroB_8T8H7rGV3De4iA' group by sn
+The total rows is: 1
+The total fields is: 6
+opid	sn	sn_position	sn_name	sn_status	time	
+6
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+o27XH5EjSiroB_8T8H7rGV3De4iA
+7c:9e:bd:d3:3e:68
+盘金华府
+我的房间
+false
+2021-04-11 23:27:26
+
+1205260
+sn size: 6
+ws data parse ok.
+ready to check ping65
+ws check error. ping65
+ready to check ping66
+ws check error. ping66
+ready to check ping67
+ws check error. ping67
+ready to check ping68
+ws check error. ping68
+ready to check ping69
+ws check error. ping69
+ready to check ping70
+ws check error. ping70
+ready to check ping71
+ws check error. ping71
+ready to check ping72
+ws check error. ping72
+ready to check ping73
+ws check error. ping73
+ready to check ping74
+ws check error. ping74
+ready to check ping75
+ws check error. ping75
+ready to check ping76
+ws check error. ping76
+ready to check ping77
+ws check error. ping77
+ready to check ping78
+ws check error. ping78
+ready to check ping79
+ws check error. ping79
+ready to check ping80
+ws check error. ping80
+ready to check ping81
+ws check error. ping81
+ready to check ping82
+ws check error. ping82
+ready to check ping83
+ws check error. ping83
+ready to check ping84
+ws check error. ping84
+ready to check ping85
+ws check error. ping85
+ready to check ping86
+ws check error. ping86
+ready to check ping87
+ws check error. ping87
+ready to check ping88
+ws check error. ping88
+ready to check ping89
+ws check error. ping89
+ready to check ping90
+ws check error. ping90
+ready to check ping91
+ws check error. ping91
+ready to check ping92
+ws check error. ping92
+ready to check ping93
+ws check error. ping93
+ready to check ping94
+ws check error. ping94
+ready to check ping95
+ws check error. ping95
+ready to check ping96
+ws check error. ping96
+ready to check ping97
+ws check error. ping97
+ready to check ping98
+ws check error. ping98
+ready to check ping99
+ws check error. ping99
+ready to check ping100
+ws check error. ping100
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check {"method":"get_sn"}
+sn_get_num: 0
+get sn failed.
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping0
+ws check error. ping0
+ready to check ping1
+ws check error. ping1
+ready to check ping2
+ws check error. ping2
+ready to check ping3
+ws check error. ping3
+ready to check {"method":"get_sn","opid":"o27XH5EjSiroB_8T8H7rGV3De4iA"}
+sn_get_num: 0
+select * from (select * from user_gw_table order by time desc LIMIT 10000 )as a      where opid ='o27XH5EjSiroB_8T8H7rGV3De4iA' group by sn
+The total rows is: 1
+The total fields is: 6
+opid	sn	sn_position	sn_name	sn_status	time	
+6
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+o27XH5EjSiroB_8T8H7rGV3De4iA
+7c:9e:bd:d3:3e:68
+盘金华府
+我的房间
+false
+2021-04-1JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+1 23:27:26
+
+1205740
+sn size: 6
+ws data parse ok.
+ready to check ping4
+ws check error. ping4
+ready to check ping5
+ws check error. ping5
+ready to check ping6
+ws check error. ping6
+ready to check ping7
+ws check error. ping7
+ready to check ping8
+ws check error. ping8
+ready to check ping
+ws check error. ping
+ready to check ping9
+ws check error. ping9
+ready to check ping10
+ws check error. ping10
+ready to check ping11
+ws check error. ping11
+ready to check ping12
+ws check error. ping12
+ready to check ping13
+ws check error. ping13
+ready to check ping
+ws check error. ping
+ready to check ping14
+ws check error. ping14
+ready to check ping15
+ws check error. ping15
+ready to check ping16
+ws check error. ping16
+ready to check ping17
+ws check error. ping17
+ready to check ping18
+ws check error. ping18
+ready to check ping19
+ws check error. ping19
+ready to check ping20
+ws check error. ping20
+ready to check ping21
+ws check error. ping21
+ready to check ping22
+ws check error. ping22
+ready to check ping23
+ws check error. ping23
+ready to check ping
+ws check error. ping
+ready to check ping24
+ws check error. ping24
+ready to check ping25
+ws check error. ping25
+ready to check ping26
+ws check error. ping26
+ready to check ping27
+ws check error. ping27
+ready to check ping28
+ws check error. ping28
+ready to check ping29
+ws check error. ping29
+ready to check ping30
+ws check error. ping30
+ready to check ping31
+ws check error. ping31
+ready to check ping32
+ws check error. ping32
+ready to check ping33
+ws check error. ping33
+ready to check ping34
+ws check error. ping34
+ready to check ping35
+ws check error. ping35
+ready to check ping36
+ws check error. ping36
+ready to check ping37
+ws check error. ping37
+ready to check ping
+ws check error. ping
+ready to check ping38
+ws check error. ping38
+ready to check ping39
+ws check error. ping39
+ready to check ping40
+ws check error. ping40
+ready to check ping41
+ws check error. ping41
+ready to check ping42
+ws check error. ping42
+ready to check ping43
+ws check error. ping43
+ready to check ping44
+ws check error. ping44
+ready to check ping45
+ws check error. ping45
+ready to check ping46
+ws check error. ping46
+ready to check ping47
+ws check error. ping47
+ready to check ping
+ws check error. ping
+ready to check ping48
+ws check error. ping48
+ready to check ping49
+ws check error. ping49
+ready to check ping50
+ws check error. ping50
+ready to check ping51
+ws check error. ping51
+ready to check ping52
+ws check error. ping52
+ready to check ping53
+ws check error. ping53
+ready to check ping54
+ws check error. ping54
+ready to check ping55
+ws check error. ping55
+ready to check ping56
+ws check error. ping56
+ready to check ping57
+ws check error. ping57
+ready to check ping
+ws check error. ping
+ready to check ping58
+ws check error. ping58
+ready to check ping59
+ws check error. ping59
+ready to check ping60
+ws check error. ping60
+ready to check ping61
+ws check error. ping61
+ready to check ping62
+ws check error. ping62
+ready to check ping63
+ws check error. ping63
+ready to check ping64
+ws check error. ping64
+ready to check ping65
+ws check error. ping65
+ready to check ping66
+ws check error. ping66
+ready to check ping67
+ws check error. ping67
+ready to check ping
+ws check error. ping
+ready to check ping68
+ws check error. ping68
+ready to check ping69
+ws check error. ping69
+ready to check ping70
+ws check error. ping70
+ready to check ping71
+ws check error. ping71
+ready to check ping72
+ws check error. ping72
+ready to check ping73
+ws check error. ping73
+ready to check ping74
+ws check error. ping74
+ready to check ping75
+ws check error. ping75
+ready to check ping76
+ws check error. ping76
+ready to check ping77
+ws check error. ping77
+ready to check ping
+ws check error. ping
+ready to check ping78
+ws check error. ping78
+ready to check ping79
+ws check error. ping79
+ready to check ping80
+ws check error. ping80
+ready to check ping81
+ws check error. ping81
+ready to check ping82
+ws check error. ping82
+ready to check ping83
+ws check error. ping83
+ready to check ping84
+ws check error. ping84
+ready to check ping85
+ws check error. ping85
+ready to check ping86
+ws check error. pinJSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+g86
+ready to check ping87
+ws check error. ping87
+ready to check ping
+ws check error. ping
+ready to check ping88
+ws check error. ping88
+ready to check ping89
+ws check error. ping89
+ready to check ping90
+ws check error. ping90
+ready to check ping91
+ws check error. ping91
+ready to check ping92
+ws check error. ping92
+ready to check ping93
+ws check error. ping93
+ready to check ping94
+ws check error. ping94
+ready to check ping95
+ws check error. ping95
+ready to check ping96
+ws check error. ping96
+ready to check ping97
+ws check error. ping97
+ready to check ping
+ws check error. ping
+ready to check ping98
+ws check error. ping98
+ready to check ping99
+ws check error. ping99
+ready to check ping100
+ws check error. ping100
+ready to check ping101
+ws check error. ping101
+ready to check ping102
+ws check error. ping102
+ready to check ping103
+ws check error. ping103
+ready to check ping
+ws check error. ping
+ready to check ping104
+ws check error. ping104
+ready to check ping105
+ws check error. ping105
+ready to check ping106
+ws check error. ping106
+ready to check ping107
+ws check error. ping107
+ready to check ping108
+ws check error. ping108
+ready to check ping109
+ws check error. ping109
+ready to check ping110
+ws check error. ping110
+ready to check ping111
+ws check error. ping111
+ready to check ping112
+ws check error. ping112
+ready to check ping113
+ws check error. ping113
+ready to check ping114
+ws check error. ping114
+ready to check ping115
+ws check error. ping115
+ready to check ping116
+ws check error. ping116
+ready to check ping117
+ws check error. ping117
+ready to check ping
+ws check error. ping
+ready to check ping118
+ws check error. ping118
+ready to check ping119
+ws check error. ping119
+ready to check ping120
+ws check error. ping120
+ready to check ping121
+ws check error. ping121
+ready to check ping122
+ws check error. ping122
+ready to check ping123
+ws check error. ping123
+ready to check ping124
+ws check error. ping124
+ready to check ping125
+ws check error. ping125
+ready to check ping126
+ws check error. ping126
+ready to check ping127
+ws check error. ping127
+ready to check ping
+ws check error. ping
+ready to check ping128
+ws check error. ping128
+ready to check ping129
+ws check error. ping129
+ready to check ping130
+ws check error. ping130
+ready to check ping131
+ws check error. ping131
+ready to check ping132
+ws check error. ping132
+ready to check ping133
+ws check error. ping133
+ready to check ping134
+ws check error. ping134
+ready to check ping135
+ws check error. ping135
+ready to check ping136
+ws check error. ping136
+ready to check ping137
+ws check error. ping137
+ready to check ping
+ws check error. ping
+ready to check ping138
+ws check error. ping138
+ready to check ping139
+ws check error. ping139
+ready to check ping140
+ws check error. ping140
+ready to check ping141
+ws check error. ping141
+ready to check ping142
+ws check error. ping142
+ready to check ping143
+ws check error. ping143
+ready to check ping144
+ws check error. ping144
+ready to check ping145
+ws check error. ping145
+ready to check ping146
+ws check error. ping146
+ready to check ping147
+ws check error. ping147
+ready to check ping
+ws check error. ping
+ready to check ping148
+ws check error. ping148
+ready to check ping149
+ws check error. ping149
+ready to check ping150
+ws check error. ping150
+ready to check ping151
+ws check error. ping151
+ready to check ping152
+ws check error. ping152
+ready to check ping153
+ws check error. ping153
+ready to check ping154
+ws check error. ping154
+ready to check ping155
+ws check error. ping155
+ready to check ping156
+ws check error. ping156
+ready to check ping
+ws check error. ping
+ready to check ping157
+ws check error. ping157
+ready to check ping158
+ws check error. ping158
+ready to check ping159
+ws check error. ping159
+ready to check ping160
+ws check error. ping160
+ready to check ping161
+ws check error. ping161
+ready to check ping162
+ws check error. ping162
+ready to check ping163
+ws check error. ping163
+ready to check ping164
+ws check error. ping164
+ready to check ping165
+ws check error. ping165
+ready to check ping166
+ws check error. ping166
+ready to check ping
+ws check eJSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+rror. ping
+ready to check ping167
+ws check error. ping167
+ready to check ping168
+ws check error. ping168
+ready to check ping169
+ws check error. ping169
+ready to check ping170
+ws check error. ping170
+ready to check ping171
+ws check error. ping171
+ready to check ping172
+ws check error. ping172
+ready to check ping173
+ws check error. ping173
+ready to check ping174
+ws check error. ping174
+ready to check ping175
+ws check error. ping175
+ready to check ping176
+ws check error. ping176
+ready to check ping
+ws check error. ping
+ready to check ping177
+ws check error. ping177
+ready to check ping178
+ws check error. ping178
+ready to check ping179
+ws check error. ping179
+ready to check ping180
+ws check error. ping180
+ready to check ping
+ws check error. ping
+ready to check ping181
+ws check error. ping181
+ready to check ping182
+ws check error. ping182
+ready to check ping183
+ws check error. ping183
+ready to check ping184
+ws check error. ping184
+ready to check ping185
+ws check error. ping185
+ready to check ping186
+ws check error. ping186
+ready to check ping187
+ws check error. ping187
+ready to check ping188
+ws check error. ping188
+ready to check ping189
+ws check error. ping189
+ready to check ping190
+ws check error. ping190
+ready to check ping191
+ws check error. ping191
+ready to check ping192
+ws check error. ping192
+ready to check ping193
+ws check error. ping193
+ready to check ping194
+ws check error. ping194
+ready to check ping195
+ws check error. ping195
+ready to check ping196
+ws check error. ping196
+ready to check ping
+ws check error. ping
+ready to check ping197
+ws check error. ping197
+ready to check ping198
+ws check error. ping198
+ready to check ping199
+ws check error. ping199
+ready to check ping200
+ws check error. ping200
+ready to check ping201
+ws check error. ping201
+ready to check ping202
+ws check error. ping202
+ready to check ping203
+ws check error. ping203
+ready to check ping204
+ws check error. ping204
+ready to check ping205
+ws check error. ping205
+ready to check ping206
+ws check error. ping206
+ready to check ping
+ws check error. ping
+ready to check ping207
+ws check error. ping207
+ready to check ping208
+ws check error. ping208
+ready to check ping209
+ws check error. ping209
+ready to check ping210
+ws check error. ping210
+ready to check ping211
+ws check error. ping211
+ready to check ping212
+ws check error. ping212
+ready to check ping213
+ws check error. ping213
+ready to check ping214
+ws check error. ping214
+ready to check ping215
+ws check error. ping215
+ready to check ping216
+ws check error. ping216
+ready to check ping
+ws check error. ping
+ready to check ping217
+ws check error. ping217
+ready to check ping218
+ws check error. ping218
+ready to check ping219
+ws check error. ping219
+ready to check ping220
+ws check error. ping220
+ready to check ping221
+ws check error. ping221
+ready to check ping222
+ws check error. ping222
+ready to check ping223
+ws check error. ping223
+ready to check ping224
+ws check error. ping224
+ready to check ping225
+ws check error. ping225
+ready to check ping226
+ws check error. ping226
+ready to check ping
+ws check error. ping
+ready to check ping227
+ws check error. ping227
+ready to check ping228
+ws check error. ping228
+ready to check ping229
+ws check error. ping229
+ready to check ping230
+ws check error. ping230
+ready to check ping231
+ws check error. ping231
+ready to check ping232
+ws check error. ping232
+ready to check ping233
+ws check error. ping233
+ready to check ping234
+ws check error. ping234
+ready to check ping235
+ws check error. ping235
+ready to check ping236
+ws check error. ping236
+ready to check ping
+ws check error. ping
+ready to check ping237
+ws check error. ping237
+ready to check ping238
+ws check error. ping238
+ready to check ping239
+ws check error. ping239
+ready to check ping240
+ws check error. ping240
+ready to check ping241
+ws check error. ping241
+ready to check ping242
+ws check error. ping242
+ready to check ping243
+ws check error. ping243
+ready to check ping244
+ws check error. ping244
+ready to check ping245
+ws check error. ping245
+ready to check ping246
+ws check error. ping246
+ready to check ping
+ws check error. piJSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+ng
+ready to check ping247
+ws check error. ping247
+ready to check ping248
+ws check error. ping248
+ready to check ping249
+ws check error. ping249
+ready to check ping250
+ws check error. ping250
+ready to check ping251
+ws check error. ping251
+ready to check ping252
+ws check error. ping252
+ready to check ping253
+ws check error. ping253
+ready to check ping254
+ws check error. ping254
+ready to check ping255
+ws check error. ping255
+ready to check ping256
+ws check error. ping256
+ready to check ping
+ws check error. ping
+ready to check ping257
+ws check error. ping257
+ready to check ping258
+ws check error. ping258
+ready to check ping259
+ws check error. ping259
+ready to check ping260
+ws check error. ping260
+ready to check ping261
+ws check error. ping261
+ready to check ping262
+ws check error. ping262
+ready to check ping263
+ws check error. ping263
+ready to check ping
+ws check error. ping
+ready to check ping264
+ws check error. ping264
+ready to check ping265
+ws check error. ping265
+ready to check ping266
+ws check error. ping266
+ready to check ping267
+ws check error. ping267
+ready to check ping268
+ws check error. ping268
+ready to check ping269
+ws check error. ping269
+ready to check ping270
+ws check error. ping270
+ready to check ping271
+ws check error. ping271
+ready to check ping272
+ws check error. ping272
+ready to check ping273
+ws check error. ping273
+ready to check ping274
+ws check error. ping274
+ready to check ping275
+ws check error. ping275
+ready to check ping276
+ws check error. ping276
+ready to check ping
+ws check error. ping
+ready to check ping277
+ws check error. ping277
+ready to check ping278
+ws check error. ping278
+ready to check ping279
+ws check error. ping279
+ready to check ping280
+ws check error. ping280
+ready to check ping281
+ws check error. ping281
+ready to check ping282
+ws check error. ping282
+ready to check ping283
+ws check error. ping283
+ready to check ping284
+ws check error. ping284
+ready to check ping285
+ws check error. ping285
+ready to check ping
+ws check error. ping
+ready to check ping286
+ws check error. ping286
+ready to check ping287
+ws check error. ping287
+ready to check ping288
+ws check error. ping288
+ready to check ping289
+ws check error. ping289
+ready to check ping290
+ws check error. ping290
+ready to check ping291
+ws check error. ping291
+ready to check ping292
+ws check error. ping292
+ready to check ping293
+ws check error. ping293
+ready to check ping294
+ws check error. ping294
+ready to check ping295
+ws check error. ping295
+ready to check ping
+ws check error. ping
+ready to check ping296
+ws check error. ping296
+ready to check ping297
+ws check error. ping297
+ready to check ping298
+ws check error. ping298
+ready to check ping299
+ws check error. ping299
+ready to check ping300
+ws check error. ping300
+ready to check ping301
+ws check error. ping301
+ready to check ping302
+ws check error. ping302
+ready to check ping303
+ws check error. ping303
+ready to check ping304
+ws check error. ping304
+ready to check ping305
+ws check error. ping305
+ready to check ping
+ws check error. ping
+ready to check ping306
+ws check error. ping306
+ready to check ping307
+ws check error. ping307
+ready to check ping308
+ws check error. ping308
+ready to check ping309
+ws check error. ping309
+ready to check ping310
+ws check error. ping310
+ready to check ping311
+ws check error. ping311
+ready to check ping312
+ws check error. ping312
+ready to check ping313
+ws check error. ping313
+ready to check ping314
+ws check error. ping314
+ready to check ping315
+ws check error. ping315
+ready to check ping
+ws check error. ping
+ready to check ping316
+ws check error. ping316
+ready to check ping317
+ws check error. ping317
+ready to check ping318
+ws check error. ping318
+ready to check ping319
+ws check error. ping319
+ready to check ping320
+ws check error. ping320
+ready to check ping321
+ws check error. ping321
+ready to check ping322
+ws check error. ping322
+ready to check ping323
+ws check error. ping323
+ready to check ping324
+ws check error. ping324
+ready to check ping325
+ws check error. ping325
+ready to check ping
+ws check error. ping
+ready to check ping326
+ws check error. ping326
+readyJSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+ to check ping327
+ws check error. ping327
+ready to check ping328
+ws check error. ping328
+ready to check ping329
+ws check error. ping329
+ready to check ping330
+ws check error. ping330
+ready to check ping331
+ws check error. ping331
+ready to check ping332
+ws check error. ping332
+ready to check ping333
+ws check error. ping333
+ready to check ping334
+ws check error. ping334
+ready to check ping335
+ws check error. ping335
+ready to check ping
+ws check error. ping
+ready to check ping336
+ws check error. ping336
+ready to check ping337
+ws check error. ping337
+ready to check ping338
+ws check error. ping338
+ready to check ping339
+ws check error. ping339
+ready to check ping340
+ws check error. ping340
+ready to check ping341
+ws check error. ping341
+ready to check ping342
+ws check error. ping342
+ready to check ping343
+ws check error. ping343
+ready to check ping344
+ws check error. ping344
+ready to check ping345
+ws check error. ping345
+ready to check ping
+ws check error. ping
+ready to check ping346
+ws check error. ping346
+ready to check ping347
+ws check error. ping347
+ready to check ping348
+ws check error. ping348
+ready to check ping349
+ws check error. ping349
+ready to check ping350
+ws check error. ping350
+ready to check ping351
+ws check error. ping351
+ready to check ping352
+ws check error. ping352
+ready to check ping353
+ws check error. ping353
+ready to check ping354
+ws check error. ping354
+ready to check ping355
+ws check error. ping355
+ready to check ping
+ws check error. ping
+ready to check ping356
+ws check error. ping356
+ready to check ping357
+ws check error. ping357
+ready to check ping358
+ws check error. ping358
+ready to check ping359
+ws check error. ping359
+ready to check ping360
+ws check error. ping360
+ready to check ping361
+ws check error. ping361
+ready to check ping362
+ws check error. ping362
+ready to check ping363
+ws check error. ping363
+ready to check ping364
+ws check error. ping364
+ready to check ping365
+ws check error. ping365
+ready to check ping
+ws check error. ping
+ready to check ping366
+ws check error. ping366
+ready to check ping367
+ws check error. ping367
+ready to check ping368
+ws check error. ping368
+ready to check ping369
+ws check error. ping369
+ready to check ping370
+ws check error. ping370
+ready to check ping371
+ws check error. ping371
+ready to check ping372
+ws check error. ping372
+ready to check ping373
+ws check error. ping373
+ready to check ping374
+ws check error. ping374
+ready to check ping375
+ws check error. ping375
+ready to check ping
+ws check error. ping
+ready to check ping376
+ws check error. ping376
+ready to check ping377
+ws check error. ping377
+ready to check ping378
+ws check error. ping378
+ready to check ping379
+ws check error. ping379
+ready to check ping380
+ws check error. ping380
+ready to check ping381
+ws check error. ping381
+ready to check ping382
+ws check error. ping382
+ready to check ping383
+ws check error. ping383
+ready to check ping384
+ws check error. ping384
+ready to check ping385
+ws check error. ping385
+ready to check ping
+ws check error. ping
+ready to check ping386
+ws check error. ping386
+ready to check ping387
+ws check error. ping387
+ready to check ping388
+ws check error. ping388
+ready to check ping389
+ws check error. ping389
+ready to check ping390
+ws check error. ping390
+ready to check ping391
+ws check error. ping391
+ready to check ping392
+ws check error. ping392
+ready to check ping393
+ws check error. ping393
+ready to check ping394
+ws check error. ping394
+ready to check ping395
+ws check error. ping395
+ready to check ping396
+ws check error. ping396
+ready to check ping397
+ws check error. ping397
+ready to check ping398
+ws check error. ping398
+ready to check ping399
+ws check error. ping399
+ready to check ping400
+ws check error. ping400
+ready to check ping401
+ws check error. ping401
+ready to check ping
+ws check error. ping
+ready to check ping402
+ws check error. ping402
+ready to check ping403
+ws check error. ping403
+ready to check ping404
+ws check error. ping404
+ready to check ping405
+ws check error. ping405
+ready to check ping406
+ws check error. ping406
+ready to check ping407
+ws check error. ping407
+ready tJSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+o check ping408
+ws check error. ping408
+ready to check ping409
+ws check error. ping409
+ready to check ping410
+ws check error. ping410
+ready to check ping
+ws check error. ping
+ready to check ping411
+ws check error. ping411
+ready to check ping412
+ws check error. ping412
+ready to check ping413
+ws check error. ping413
+ready to check ping414
+ws check error. ping414
+ready to check ping415
+ws check error. ping415
+ready to check ping416
+ws check error. ping416
+ready to check ping417
+ws check error. ping417
+ready to check ping418
+ws check error. ping418
+ready to check ping419
+ws check error. ping419
+ready to check ping420
+ws check error. ping420
+ready to check ping421
+ws check error. ping421
+ready to check ping
+ws check error. ping
+ready to check ping422
+ws check error. ping422
+ready to check ping423
+ws check error. ping423
+ready to check ping424
+ws check error. ping424
+ready to check ping425
+ws check error. ping425
+ready to check ping426
+ws check error. ping426
+ready to check ping427
+ws check error. ping427
+ready to check ping428
+ws check error. ping428
+ready to check ping429
+ws check error. ping429
+ready to check ping430
+ws check error. ping430
+ready to check ping
+ws check error. ping
+ready to check ping431
+ws check error. ping431
+ready to check ping432
+ws check error. ping432
+ready to check ping433
+ws check error. ping433
+ready to check ping434
+ws check error. ping434
+ready to check ping435
+ws check error. ping435
+ready to check ping436
+ws check error. ping436
+ready to check ping437
+ws check error. ping437
+ready to check ping438
+ws check error. ping438
+ready to check ping439
+ws check error. ping439
+ready to check ping440
+ws check error. ping440
+ready to check ping441
+ws check error. ping441
+ready to check ping442
+ws check error. ping442
+ready to check ping443
+ws check error. ping443
+ready to check ping444
+ws check error. ping444
+ready to check ping
+ws check error. ping
+ready to check ping445
+ws check error. ping445
+ready to check ping446
+ws check error. ping446
+ready to check ping447
+ws check error. ping447
+ready to check ping448
+ws check error. ping448
+ready to check ping449
+ws check error. ping449
+ready to check ping450
+ws check error. ping450
+ready to check ping451
+ws check error. ping451
+ready to check ping452
+ws check error. ping452
+ready to check ping453
+ws check error. ping453
+ready to check ping454
+ws check error. ping454
+ready to check ping
+ws check error. ping
+ready to check ping455
+ws check error. ping455
+ready to check ping456
+ws check error. ping456
+ready to check ping457
+ws check error. ping457
+ready to check ping458
+ws check error. ping458
+ready to check ping459
+ws check error. ping459
+ready to check ping460
+ws check error. ping460
+ready to check ping461
+ws check error. ping461
+ready to check ping462
+ws check error. ping462
+ready to check ping463
+ws check error. ping463
+ready to check ping464
+ws check error. ping464
+ready to check ping
+ws check error. ping
+ready to check ping465
+ws check error. ping465
+ready to check ping466
+ws check error. ping466
+ready to check ping467
+ws check error. ping467
+ready to check ping468
+ws check error. ping468
+ready to check ping469
+ws check error. ping469
+ready to check ping470
+ws check error. ping470
+ready to check ping471
+ws check error. ping471
+ready to check ping472
+ws check error. ping472
+ready to check ping473
+ws check error. ping473
+ready to check ping474
+ws check error. ping474
+ready to check ping
+ws check error. ping
+ready to check ping475
+ws check error. ping475
+ready to check ping476
+ws check error. ping476
+ready to check ping477
+ws check error. ping477
+ready to check ping478
+ws check error. ping478
+ready to check ping479
+ws check error. ping479
+ready to check ping480
+ws check error. ping480
+ready to check ping481
+ws check error. ping481
+ready to check ping482
+ws check error. ping482
+ready to check ping483
+ws check error. ping483
+ready to check ping484
+ws check error. ping484
+ready to check ping
+ws check error. ping
+ready to check ping485
+ws check error. ping485
+ready to check ping486
+ws check error. ping486
+ready to check ping487
+ws check error. ping487
+ready to check JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+ping488
+ws check error. ping488
+ready to check ping489
+ws check error. ping489
+ready to check ping490
+ws check error. ping490
+ready to check ping491
+ws check error. ping491
+ready to check ping492
+ws check error. ping492
+ready to check ping493
+ws check error. ping493
+ready to check ping494
+ws check error. ping494
+ready to check ping
+ws check error. ping
+ready to check ping495
+ws check error. ping495
+ready to check ping496
+ws check error. ping496
+ready to check ping497
+ws check error. ping497
+ready to check ping498
+ws check error. ping498
+ready to check ping499
+ws check error. ping499
+ready to check ping500
+ws check error. ping500
+ready to check ping501
+ws check error. ping501
+ready to check ping502
+ws check error. ping502
+ready to check ping503
+ws check error. ping503
+ready to check ping504
+ws check error. ping504
+ready to check ping
+ws check error. ping
+ready to check ping505
+ws check error. ping505
+ready to check ping506
+ws check error. ping506
+ready to check ping507
+ws check error. ping507
+ready to check ping508
+ws check error. ping508
+ready to check ping509
+ws check error. ping509
+ready to check ping510
+ws check error. ping510
+ready to check ping511
+ws check error. ping511
+ready to check ping512
+ws check error. ping512
+ready to check ping513
+ws check error. ping513
+ready to check ping514
+ws check error. ping514
+ready to check ping
+ws check error. ping
+ready to check ping515
+ws check error. ping515
+ready to check ping516
+ws check error. ping516
+ready to check ping517
+ws check error. ping517
+ready to check ping518
+ws check error. ping518
+ready to check ping519
+ws check error. ping519
+ready to check ping520
+ws check error. ping520
+ready to check ping521
+ws check error. ping521
+ready to check ping522
+ws check error. ping522
+ready to check ping523
+ws check error. ping523
+ready to check ping524
+ws check error. ping524
+ready to check ping
+ws check error. ping
+ready to check ping525
+ws check error. ping525
+ready to check ping526
+ws check error. ping526
+ready to check ping527
+ws check error. ping527
+ready to check ping528
+ws check error. ping528
+ready to check ping529
+ws check error. ping529
+ready to check ping530
+ws check error. ping530
+ready to check ping531
+ws check error. ping531
+ready to check ping532
+ws check error. ping532
+ready to check ping533
+ws check error. ping533
+ready to check ping534
+ws check error. ping534
+ready to check ping535
+ws check error. ping535
+ready to check ping536
+ws check error. ping536
+ready to check ping537
+ws check error. ping537
+ready to check ping538
+ws check error. ping538
+ready to check ping539
+ws check error. ping539
+ready to check ping540
+ws check error. ping540
+ready to check ping541
+ws check error. ping541
+ready to check ping542
+ws check error. ping542
+ready to check ping543
+ws check error. ping543
+ready to check ping544
+ws check error. ping544
+ready to check ping545
+ws check error. ping545
+ready to check ping546
+ws check error. ping546
+ready to check ping547
+ws check error. ping547
+ready to check ping548
+ws check error. ping548
+ready to check ping549
+ws check error. ping549
+ready to check ping550
+ws check error. ping550
+ready to check ping551
+ws check error. ping551
+ready to check ping552
+ws check error. ping552
+ready to check ping553
+ws check error. ping553
+ready to check ping554
+ws check error. ping554
+ready to check ping555
+ws check error. ping555
+ready to check ping556
+ws check error. ping556
+ready to check ping557
+ws check error. ping557
+ready to check ping558
+ws check error. ping558
+ready to check ping559
+ws check error. ping559
+ready to check ping560
+ws check error. ping560
+ready to check ping561
+ws check error. ping561
+ready to check ping562
+ws check error. ping562
+ready to check ping563
+ws check error. ping563
+ready to check ping564
+ws check error. ping564
+ready to check ping565
+ws check error. ping565
+ready to check ping566
+ws check error. ping566
+ready to check ping567
+ws check error. ping567
+ready to check ping568
+ws check error. ping568
+ready to check ping569
+ws check error. ping569
+ready to check ping570
+ws check error. ping570
+ready to check ping571
+ws check error. ping571JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+
+ready to check ping572
+ws check error. ping572
+ready to check ping573
+ws check error. ping573
+ready to check ping574
+ws check error. ping574
+ready to check ping575
+ws check error. ping575
+ready to check ping576
+ws check error. ping576
+ready to check ping577
+ws check error. ping577
+ready to check ping578
+ws check error. ping578
+ready to check ping579
+ws check error. ping579
+ready to check ping580
+ws check error. ping580
+ready to check ping581
+ws check error. ping581
+ready to check ping582
+ws check error. ping582
+ready to check ping583
+ws check error. ping583
+ready to check ping584
+ws check error. ping584
+ready to check ping585
+ws check error. ping585
+ready to check ping586
+ws check error. ping586
+ready to check ping587
+ws check error. ping587
+ready to check ping588
+ws check error. ping588
+ready to check ping589
+ws check error. ping589
+ready to check ping590
+ws check error. ping590
+ready to check ping591
+ws check error. ping591
+ready to check ping
+ws check error. ping
+ready to check ping592
+ws check error. ping592
+ready to check ping593
+ws check error. ping593
+ready to check ping594
+ws check error. ping594
+ready to check ping595
+ws check error. ping595
+ready to check ping596
+ws check error. ping596
+ready to check ping597
+ws check error. ping597
+ready to check ping598
+ws check error. ping598
+ready to check ping599
+ws check error. ping599
+ready to check ping600
+ws check error. ping600
+ready to check ping601
+ws check error. ping601
+ready to check ping602
+ws check error. ping602
+ready to check ping603
+ws check error. ping603
+ready to check ping604
+ws check error. ping604
+ready to check ping605
+ws check error. ping605
+ready to check ping606
+ws check error. ping606
+ready to check ping607
+ws check error. ping607
+ready to check ping608
+ws check error. ping608
+ready to check ping609
+ws check error. ping609
+ready to check ping610
+ws check error. ping610
+ready to check ping611
+ws check error. ping611
+ready to check ping612
+ws check error. ping612
+ready to check ping613
+ws check error. ping613
+ready to check ping614
+ws check error. ping614
+ready to check ping615
+ws check error. ping615
+ready to check ping616
+ws check error. ping616
+ready to check ping617
+ws check error. ping617
+ready to check ping618
+ws check error. ping618
+ready to check ping619
+ws check error. ping619
+ready to check ping620
+ws check error. ping620
+ready to check ping621
+ws check error. ping621
+ready to check ping622
+ws check error. ping622
+ready to check ping623
+ws check error. ping623
+ready to check ping624
+ws check error. ping624
+ready to check ping625
+ws check error. ping625
+ready to check ping626
+ws check error. ping626
+ready to check ping627
+ws check error. ping627
+ready to check ping628
+ws check error. ping628
+ready to check ping629
+ws check error. ping629
+ready to check ping630
+ws check error. ping630
+ready to check ping631
+ws check error. ping631
+ready to check ping632
+ws check error. ping632
+ready to check ping633
+ws check error. ping633
+ready to check ping634
+ws check error. ping634
+ready to check ping635
+ws check error. ping635
+ready to check ping636
+ws check error. ping636
+ready to check ping637
+ws check error. ping637
+ready to check ping638
+ws check error. ping638
+ready to check ping639
+ws check error. ping639
+ready to check ping640
+ws check error. ping640
+ready to check ping641
+ws check error. ping641
+ready to check ping642
+ws check error. ping642
+ready to check ping643
+ws check error. ping643
+ready to check ping644
+ws check error. ping644
+ready to check ping645
+ws check error. ping645
+ready to check ping646
+ws check error. ping646
+ready to check ping647
+ws check error. ping647
+ready to check ping648
+ws check error. ping648
+ready to check ping649
+ws check error. ping649
+ready to check ping650
+ws check error. ping650
+ready to check ping651
+ws check error. ping651
+ready to check ping652
+ws check error. ping652
+ready to check ping653
+ws check error. ping653
+ready to check ping654
+ws check error. ping654
+ready to check ping655
+ws check error. ping655
+ready to check ping656
+ws check error. ping656
+ready to check ping657
+ws check error. ping657
+ready to cheJSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+[2021/08/30 10:38:40:0175] N:  -- [wsisrv|4|adopted] (1) 1.250min
+JSON_checker_char: syntax error
+[2021/08/30 10:38:45:1371] N:  ++ [wsisrv|5|adopted] (2)
+[2021/08/30 10:38:45:2234] W: LWS_CALLBACK_ESTABLISHED
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+ck ping658
+ws check error. ping658
+ready to check ping659
+ws check error. ping659
+ready to check ping660
+ws check error. ping660
+ready to check ping661
+ws check error. ping661
+ready to check ping662
+ws check error. ping662
+ready to check ping663
+ws check error. ping663
+ready to check ping664
+ws check error. ping664
+ready to check ping665
+ws check error. ping665
+ready to check ping666
+ws check error. ping666
+ready to check ping667
+ws check error. ping667
+ready to check ping668
+ws check error. ping668
+ready to check ping669
+ws check error. ping669
+ready to check ping670
+ws check error. ping670
+ready to check ping671
+ws check error. ping671
+ready to check ping672
+ws check error. ping672
+ready to check ping673
+ws check error. ping673
+ready to check ping674
+ws check error. ping674
+ready to check ping675
+ws check error. ping675
+ready to check ping676
+ws check error. ping676
+ready to check ping677
+ws check error. ping677
+ready to check ping678
+ws check error. ping678
+ready to check ping679
+ws check error. ping679
+ready to check ping680
+ws check error. ping680
+ready to check ping681
+ws check error. ping681
+ready to check ping682
+ws check error. ping682
+ready to check ping683
+ws check error. ping683
+ready to check ping684
+ws check error. ping684
+ready to check ping685
+ws check error. ping685
+ready to check ping686
+ws check error. ping686
+ready to check ping687
+ws check error. ping687
+ready to check ping688
+ws check error. ping688
+ready to check ping689
+ws check error. ping689
+ready to check ping690
+ws check error. ping690
+ready to check ping691
+ws check error. ping691
+ready to check ping692
+ws check error. ping692
+ready to check ping
+ws check error. ping
+ready to check ping693
+ws check error. ping693
+ready to check ping694
+ws check error. ping694
+ready to check ping695
+ws check error. ping695
+ready to check ping696
+ws check error. ping696
+ready to check ping697
+ws check error. ping697
+ready to check ping698
+ws check error. ping698
+ready to check ping699
+ws check error. ping699
+ready to check ping700
+ws check error. ping700
+ready to check ping701
+ws check error. ping701
+ready to check {"method":"get_sn","opid":"o27XH5EjSiroB_8T8H7rGV3De4iA"}
+sn_get_num: 0
+select * from (select * from user_gw_table order by time desc LIMIT 10000 )as a      where opid ='o27XH5EjSiroB_8T8H7rGV3De4iA' group by sn
+The total rows is: 1
+The total fields is: 6
+opid	sn	sn_position	sn_name	sn_status	time	
+6
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+o27XH5EjSiroB_8T8H7rGV3De4iA
+7c:9e:bd:d3:3e:68
+盘金华府
+我的房间
+false
+2021-04-11 23:27:26
+
+11f8df0
+sn size: 6
+ws data parse ok.
+ready to check ping702
+ws check error. ping702
+ready to check ping703
+ws check error. ping703
+ready to check ping704
+ws check error. ping704
+ready to check ping705
+ws check error. ping705
+ready to check ping706
+ws check error. ping706
+ready to check ping707
+ws check error. ping707
+ready to check ping708
+ws check error. ping708
+ready to check ping709
+ws check error. ping709
+ready to check ping710
+ws check error. ping710
+ready to check ping711
+ws check error. ping711
+ready to check ping712
+ws check error. ping712
+ready to check ping713
+ws check error. ping713
+ready to check ping714
+ws check error. ping714
+ready to check ping715
+ws check error. ping715
+ready to check ping716
+ws check error. ping716
+ready to check ping717
+ws check error. ping717
+ready to check ping718
+ws check error. ping718
+ready to check ping719
+ws check error. ping719
+ready to check ping720
+ws check error. ping720
+ready to check ping721
+ws check error. ping721
+ready to check ping722
+ws check error. ping722
+ready to check ping723
+ws check error. ping723
+ready to check ping724
+ws check error. ping724
+ready to check ping725
+ws check error. ping725
+ready to check ping726
+ws check error. ping726
+ready to check ping727
+ws check error. ping727
+ready to check ping728
+ws check error. ping728
+ready to check ping
+ws check error. ping
+ready to check ping0
+ws check error. ping0
+ready to check ping1
+ws check error. ping1
+ready to check ping2
+ws check error. ping2
+ready to check ping3
+ws check error. ping3
+reaJSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+[2021/08/30 10:38:53:8358] N:  -- [wsisrv|5|adopted] (1) 8.698s
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+dy to check ping4
+ws check error. ping4
+ready to check ping5
+ws check error. ping5
+ready to check ping6
+ws check error. ping6
+ready to check ping7
+ws check error. ping7
+ready to check ping8
+ws check error. ping8
+ready to check ping9
+ws check error. ping9
+ready to check ping10
+ws check error. ping10
+ready to check ping11
+ws check error. ping11
+ready to check ping12
+ws check error. ping12
+ready to check ping13
+ws check error. ping13
+ready to check ping14
+ws check error. ping14
+ready to check ping15
+ws check error. ping15
+ready to check ping16
+ws check error. ping16
+ready to check ping17
+ws check error. ping17
+ready to check ping18
+ws check error. ping18
+ready to check ping19
+ws check error. ping19
+ready to check ping20
+ws check error. ping20
+ready to check {"method":"get_sn","opid":"o27XH5EjSiroB_8T8H7rGV3De4iA"}
+sn_get_num: 0
+select * from (select * from user_gw_table order by time desc LIMIT 10000 )as a      where opid ='o27XH5EjSiroB_8T8H7rGV3De4iA' group by sn
+The total rows is: 1
+The total fields is: 6
+opid	sn	sn_position	sn_name	sn_status	time	
+6
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+malloc ok
+o27XH5EjSiroB_8T8H7rGV3De4iA
+7c:9e:bd:d3:3e:68
+盘金华府
+我的房间
+false
+2021-04-11 23:27:26
+
+1205a20
+sn size: 6
+ws data parse ok.
+ready to check ping21
+ws check error. ping21
+ready to check ping22
+ws check error. ping22
+ready to check ping23
+ws check error. ping23
+ready to check ping24
+ws check error. ping24
+ready to check ping25
+ws check error. ping25
+ready to check ping26
+ws check error. ping26
+ready to check ping27
+ws check error. ping27
+ready to check ping28
+ws check error. ping28
+ready to check ping29
+ws check error. ping29
+ready to check ping30
+ws check error. ping30
+ready to check ping31
+ws check error. ping31
+ready to check ping32
+ws check error. ping32
+ready to check ping33
+ws check error. ping33
+ready to check ping34
+ws check error. ping34
+ready to check ping35
+ws check error. ping35
+ready to check ping36
+ws check error. ping36
+ready to check ping37
+ws check error. ping37
+ready to check ping38
+ws check error. ping38
+ready to check ping39
+ws check error. ping39
+ready to check ping40
+ws check error. ping40
+ready to check ping41
+ws check error. ping41
+ready to check ping42
+ws check error. ping42
+ready to check ping43
+ws check error. ping43
+ready to check ping44
+ws check error. ping44
+ready to check ping45
+ws check error. ping45
+ready to check ping46
+ws check error. ping46
+ready to check ping47
+ws check error. ping47
+ready to check ping48
+ws check error. ping48
+ready to check ping49
+ws check error. ping49
+ready to check ping50
+ws check error. ping50
+ready to check ping51
+ws check error. ping51
+ready to check ping52
+ws check error. ping52
+ready to check ping53
+ws check error. ping53
+ready to check ping54
+ws check error. ping54
+ready to check ping55
+ws check error. ping55
+ready to check ping56
+ws check error. ping56
+ready to check ping57
+ws check error. ping57
+ready to check ping58
+ws check error. ping58
+ready to check ping59
+ws check error. ping59
+ready to check ping60
+ws check error. ping60
+ready to check ping61
+ws check error. ping61
+ready to check ping62
+ws check error. ping62
+ready to check ping63
+ws check error. ping63
+ready to check ping64
+ws check error. ping64
+ready to check ping65
+ws check error. ping65
+ready to check ping66
+ws check error. ping66
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws check error. ping
+ready to check ping
+ws cJSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+JSON_checker_char: syntax error
+[2021/08/30 10:46:00:9781] N:  -- [wsisrv|0|adopted] (0) 58.079min

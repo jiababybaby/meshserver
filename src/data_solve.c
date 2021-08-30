@@ -354,6 +354,7 @@ int ws_data_Parse_Json(char *ws_data, char *reply_data)
         cJSON* SN = cJSON_GetObjectItem(root, "sn");   //gataway
         if(cJSON_IsInvalid(SN)){
             printf("sn error\n");
+            cJSON_Delete(root);
             return -1;
         }
         char* position=cJSON_GetStringValue(cJSON_GetObjectItem(SN,"position"));
@@ -370,8 +371,15 @@ int ws_data_Parse_Json(char *ws_data, char *reply_data)
         gw_info.sn_floor = floor;
         gw_info.sn_status = "false";
         sn_get_from_sql sn_get_from_sql_v;
-        mesh_sql_v.mysql_getsn(opid, &sn_get_from_sql_v);
-
+        memset(&sn_get_from_sql_v, 0, sizeof(sn_get_from_sql));
+        printf("sn_get_num: %d\n", sn_get_from_sql_v.num);
+        if (mesh_sql_v.mysql_getsn(opid, &sn_get_from_sql_v) == -1)
+        {
+            printf("get sn failed.\n");
+            cJSON_Delete(root);
+            return -1;
+        }
+        
         cJSON* ans = NULL;
         cJSON* dec = NULL;
         ans = cJSON_CreateObject();
@@ -381,7 +389,7 @@ int ws_data_Parse_Json(char *ws_data, char *reply_data)
         for (i = 0; i < sn_get_from_sql_v.num; i++)
         {
             cJSON* sn_temp;
-            printf("%x",sn_get_from_sql_v.user_gw_v[i].sn);
+            printf("%x\n",sn_get_from_sql_v.user_gw_v[i].sn);
             sn_temp = cJSON_CreateObject();
             cJSON_AddStringToObject(sn_temp, "name", sn_get_from_sql_v.user_gw_v[i].sn_name);
             cJSON_AddStringToObject(sn_temp, "position", sn_get_from_sql_v.user_gw_v[i].sn_position);
@@ -433,8 +441,13 @@ int ws_data_Parse_Json(char *ws_data, char *reply_data)
         gw_info.sn_position=position;
         gw_info.sn_status="false";
         device_get_from_sql device_get_from_sql_v;
+        memset(&device_get_from_sql_v, 0, sizeof(device_get_from_sql));
         printf("ready get device\n");
-        mesh_sql_v.mysql_getdevice(gw_info, device_mac, &device_get_from_sql_v);
+        if(mesh_sql_v.mysql_getdevice(gw_info, device_mac, &device_get_from_sql_v) == -1){
+            printf("get device failed.\n");
+            cJSON_Delete(root);
+            return -1;
+        }
         printf("get device success.\n");
         cJSON *ans;
         cJSON* dec;

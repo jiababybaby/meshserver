@@ -81,7 +81,7 @@ int main(int argc,char *argv[]){
             mesh_tcp_init(globalArgs.tcp_port);
             exit(0);
         }
-        else if (pid_ws > 0)
+        else if (pid_tcp > 0)
         {
             printf("main process.\r\n");
         }
